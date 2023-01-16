@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a="Aditya"; //string
+        document.write(a); //prints in browser
+        document.write("<br>"); //using html in javascript->moves to next line
+
+        var x=1; //integer
+        var y=2;
+        var z=x+y;
+        document.write(z);
+        document.write("<br>");
+
+        var b=false; //boolean
+        document.write(b);
+        document.write("<br>");
+        document.write(typeof(b)); //to know the data type
+        document.write("<br>");
+        document.write("<br>");
+
+        //declaring a function
+        function add(a,b){
+            var ans=a+b;
+            return ans;
+        }
+        var ans=add(10,40);
+        document.write(ans+"<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        //declaring an array
+        var friends=['harsh','rohit','aditya'];
+        document.write(friends);
+        document.write("<br>");
+
+        //methods of array
+        var len=friends.length;
+        document.write(len);
+        document.write("<br>");
+        friends.sort();
+        //adding an element in the last of array
+        friends.push("pratyush"); 
+        document.write(friends);
+        document.write("<br>"); 
+        //removing the last element of array
+        friends.pop();
+        document.write(friends);
+        document.write("<br>");
+        //removing first element of array
+        friends.shift();
+        document.write(friends);
+        document.write("<br>");
+        //adding an element in the first position of array
+        friends.unshift("Aditya");
+        document.write(friends);
+        document.write("<br>");
+        //Array.isArray is used to determine weather the passed value is an array or not
+        var check=Array.isArray(friends);
+        document.write(check);
+        document.write("<br>");
+        //concat 2 arrays
+        var extra=['mohit','chirag'];
+        document.write(friends.concat(extra));
+        document.write("<br>");
+
+    </script>
+</body>
+</html>

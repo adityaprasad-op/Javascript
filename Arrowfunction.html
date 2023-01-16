@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <script>
+        //function
+        const sayHello=(name)=>{
+            console.log("greeting"+" "+name)
+            console.log("hello")
+        }
+        //object
+        const x={
+            name: "harry",
+            role: "js developer",
+            exp: 30,
+            show:function(){
+                // displays the value after 2s
+                setTimeout(()=> {
+                    console.log(`the name is ${this.name} \n the role is ${this.role}`)
+                },2000)
+            }
+        }
+        sayHello("harry");
+        x.show();
+    </script>
+</body>
+</html>
